@@ -9,3 +9,32 @@ After entering the details and clicking on the link provided in the Google Colab
 
 ## Course assessment
 The notebook contains a number of assessed questions (highlighted in red) throughout. Please submit your responses to these questions via the following Google Forms: [https://forms.gle/2rugKQ1gvNbPTBwn9].
+
+## Post-course 
+If you find yourself inspired by the course, you can install all the necessary dependencies locally. Everything has been nicely containerized in a Docker image.
+
+* Install Docker on your machine (if not done already). ChatGPT will help with the instructions.
+
+* Clone this git repository, move to the directory and build the Docker image:
+```
+git clone https://github.com/jonathon-langford/acceleratingai-aims25.git
+cd acceleratingai-aims25
+docker build -t oneapi-hls4ml-2025 --build-arg user=$USER .
+```
+
+* Run the docker image, making sure that the container has access to your home folder (-v):
+```
+docker run -p 127.0.0.1:8080:8080 -v /home/$USER/:/home/$USER/local -it oneapi-hls4ml-2025
+```
+
+* Move to your working directory (change the path accordingly), and start a jupyter session:
+```
+cd /home/$user/<path>/acceleratingai-aims25
+jupyter notebook --port=8080 --ip=0.0.0.0 --no-browser
+```
+
+* Copy the url into your broswer and do your work via a notebook. 
+
+* Alternatively, you can work in standard python importing the libraries as necessary.
+
+Enjoy!
