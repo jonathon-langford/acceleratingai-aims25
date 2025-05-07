@@ -1,9 +1,13 @@
 # Accelerating Machine Learning
 Welcome to the "Accelerating Machine Learning" course at AIMS 2025. This repository will store all of the course contents, and provide information on how to access the relevant notebooks.
 
-The course requires access to OneAPIs FPGA codebase. To avoid a lengthy (and memory-intensive) installation process, we have set up a Docker container with the relevant libraries on Google Cloud Virtual Machines (VM). This VM will only stay active for a few days after the course due to running costs. The Google Colab link below provides a portal to the course notebook within the Docker container. You will need to input the VM IP address, port and jupyter token, that will be provided by the course leader.
+The course requires access to OneAPIs FPGA codebase. To avoid a lengthy (and memory-intensive) installation process, we have set up a Docker container with the relevant libraries on Google Cloud Virtual Machines (VM). This VM will only stay active for a few days after the course due to running costs. The Google Colab link below provides a portal to the course notebook within the Docker container. 
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1s2pALSzd1E-5aIZyLkkYQLf6hDc1k-Ag?usp=sharing)
+
+You will need to input the VM IP address, port and jupyter token which can be found in the Google Sheets link below. Please use the VM as directed by the course leader. Note your progress is only saved on the VM that you are using i.e. if you switch machines then your progress will be lost. If (for some reason) one of the machines goes down, we will need to reload the Jupyter server. In this case, we will update the information in the Google Sheets and you will need to reload the link in the Google Colab portal.
+
+Google Sheets link: [https://docs.google.com/spreadsheets/d/1La978EN-W2NXJsB4ocPxPl7cBZJCzdpCRqx2_BtFD5E/edit?usp=sharing]
 
 After entering the details and clicking on the link provided in the Google Colab, a new browser window will open. Please enter the folder with your name and open the `hls4ml_introduction.ipynb` notebook.
 
